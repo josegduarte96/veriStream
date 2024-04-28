@@ -58,9 +58,9 @@ Estos son
 los [composables](https://vue3-spanish.netlify.app/guide/reusability/composables.html#%C2%BFque-es-un-composable) antes
 mencionados:
 
-- [`auth.ts`](src/composables/auth.ts) - Se encarga de gestionar la autenticación de los usuarios a través del SDK de
+- [`auth.ts`](composables/auth.ts) - Se encarga de gestionar la autenticación de los usuarios a través del SDK de
   firebase.
-- [`omdb.ts`](src/composables/omdb.ts) - Consulta las películas por ID o algun keyword mediante búsqueda.
+- [`omdb.ts`](composables/omdb.ts) - Consulta las películas por ID o algun keyword mediante búsqueda.
 
 ## TODOs (Tareas pendientes)
 
