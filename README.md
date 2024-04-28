@@ -10,7 +10,8 @@ VeriStream es una plataforma online para mirar a detalle las películas del mome
 
 ### Capturas
 
-![![Diseño sin título.png](..%2F..%2FDownloads%2FDise%C3%B1o%20sin%20t%C3%ADtulo.png)]()
+![Diseño sin título](https://github.com/josegduarte96/veriStream/assets/67060283/ebfeb5d5-2a5c-4edd-b9bf-06761b31e7c0)
+
 
 ## Notas de configuración
 
@@ -57,9 +58,9 @@ Estos son
 los [composables](https://vue3-spanish.netlify.app/guide/reusability/composables.html#%C2%BFque-es-un-composable) antes
 mencionados:
 
-- [`auth.ts`](src/composables/auth.ts) - Se encarga de gestionar la autenticación de los usuarios a través del SDK de
+- [`auth.ts`](composables/auth.ts) - Se encarga de gestionar la autenticación de los usuarios a través del SDK de
   firebase.
-- [`omdb.ts`](src/composables/omdb.ts) - Consulta las películas por ID o algun keyword mediante búsqueda.
+- [`omdb.ts`](composables/omdb.ts) - Consulta las películas por ID o algun keyword mediante búsqueda.
 
 ## TODOs (Tareas pendientes)
 
