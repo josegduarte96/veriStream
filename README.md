@@ -10,7 +10,8 @@ VeriStream es una plataforma online para mirar a detalle las películas del mome
 
 ### Capturas
 
-![![Diseño sin título.png](..%2F..%2FDownloads%2FDise%C3%B1o%20sin%20t%C3%ADtulo.png)]()
+![Diseño sin título](https://github.com/josegduarte96/veriStream/assets/67060283/ebfeb5d5-2a5c-4edd-b9bf-06761b31e7c0)
+
 
 ## Notas de configuración
 
