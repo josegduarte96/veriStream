@@ -68,6 +68,7 @@ mencionados:
 Debido al tiempo limitado para la realización de la prueba, algunas funcionalidades y requerimientos quedaron
 pendientes:
 
+- [ ]  Suite de pruebas
 - [ ]  Que los usuarios puedan recuperar la contraseña de su cuenta.
 - [ ]  Mejorar el llamado al backend (algún cacheo de la data) para optimizar la carga de la pagina.
 
