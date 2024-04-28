@@ -5,9 +5,12 @@ import {
   type SearchResults,
 } from '~/types'
 
-export const apiBaseUrl = 'http://www.omdbapi.com'
+export const apiBaseUrl = 'https://www.omdbapi.com'
 
-async function apiFetch(params: Params = {}, mediaType: MediaType = MediaType.MOVIE): Promise<any> {
+async function apiFetch(
+  params: Params = {},
+  mediaType: MediaType = MediaType.MOVIE,
+): Promise<any> {
   try {
     return await $fetch(apiBaseUrl, {
       query: {
@@ -28,7 +31,9 @@ async function apiFetch(params: Params = {}, mediaType: MediaType = MediaType.MO
 /*
  Buscador general de peliculas
  */
-export async function getMoviesBySearch(params: Params): Promise<SearchResults> {
+export async function getMoviesBySearch(
+  params: Params,
+): Promise<SearchResults> {
   return await apiFetch(params)
 }
 
