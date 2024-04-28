@@ -16,7 +16,6 @@ const ui = {
   },
   footer: {
     padding: 'px-0 py-0 sm:px-2',
-
   },
 }
 
@@ -26,12 +25,13 @@ const isActive = computed(() => active.value === props.movie.imdbID)
 
 <template>
   <UCard :ui="ui" @click="active = movie.imdbID">
-    <NuxtImg
-      :src="movie.Poster" class="rounded-lg cursor-pointer h-[340px] w-[220px] shadow"
+    <img
+      :src="movie.Poster"
+      class="rounded-lg cursor-pointer h-[340px] w-[220px] shadow"
       loading="lazy"
       :alt="`movie-${movie.Title}`"
       :class="{ active: isActive }"
-    />
+    >
     <template #footer>
       <div class="w-[200px]">
         <div class="text-sm font-semibold text-ellipsis overflow-hidden">

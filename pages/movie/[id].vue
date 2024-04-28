@@ -2,7 +2,9 @@
 const route = useRoute()
 const router = useRouter()
 const { movie, findMovie } = useMovies()
-const popularity = computed(() => movie.value && Math.round(Number(movie.value?.imdbRating) / 2))
+const popularity = computed(
+  () => movie.value && Math.round(Number(movie.value?.imdbRating) / 2),
+)
 
 onMounted(async () => await findMovie(route.params.id as string))
 
@@ -19,11 +21,12 @@ function goBack() {
   <div class="w-full flex justify-center">
     <UCard v-if="movie" class="w-full lg:w-4/6 m-3">
       <div class="flex flex-col sm:flex-row">
-        <NuxtImg
-          :src="movie.Poster" class="rounded-lg cursor-pointer w-[350px] h-[500px] md:mr-10"
+        <img
+          :src="movie.Poster"
+          class="rounded-lg cursor-pointer w-[350px] h-[500px] md:mr-10"
           loading="lazy"
           :alt="`movie-${movie.Title}`"
-        />
+        >
         <div class="my-2">
           <UButton
             class="mb-3"
@@ -45,7 +48,10 @@ function goBack() {
             </div>
             <div class="my-3">
               <UBadge
-                v-for="genre in getGenres(movie.Genre)" :key="genre" class="m-1" :ui="{ rounded: 'rounded-full' }"
+                v-for="genre in getGenres(movie.Genre)"
+                :key="genre"
+                class="m-1"
+                :ui="{ rounded: 'rounded-full' }"
                 color="violet"
                 variant="solid"
               >
@@ -58,15 +64,9 @@ function goBack() {
             <p class="py-1 mb-5">
               {{ movie.Plot }}
             </p>
-            <p>
-              Release date: {{ movie.Released }}
-            </p>
-            <p>
-              Awards: {{ movie.Awards }}
-            </p>
-            <p>
-              Actors: {{ movie.Actors }}
-            </p>
+            <p>Release date: {{ movie.Released }}</p>
+            <p>Awards: {{ movie.Awards }}</p>
+            <p>Actors: {{ movie.Actors }}</p>
           </div>
         </div>
       </div>
