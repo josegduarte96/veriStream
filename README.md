@@ -2,7 +2,7 @@
 
 ### Demo
 
-[https://pokedex-jd.netlify.app/#/](https://pokedex-jd.netlify.app/#/)
+[https://veristream.netlify.app/](https://veristream.netlify.app/)
 
 ### Descripción del proyecto
 
