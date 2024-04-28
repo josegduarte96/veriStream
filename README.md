@@ -14,7 +14,9 @@ VeriStream es una plataforma online para mirar a detalle las películas del mome
 
 ## Notas de configuración
 
-Para desarrollo local: `npm run dev`
+Para desarrollo local:
+Ejecutar primero `npm i` y luego `npm run dev`
+
 Por defecto se ejecuta en el puerto localhost:3000
 
 Para poder entrar a la plataforma, es necesario registrarse.
