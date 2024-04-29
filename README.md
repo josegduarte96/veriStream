@@ -48,7 +48,7 @@ Si no, las credenciales para acceder desde el login son:
     |-plugins ## Firebase SDK
     |-stores
       |-auth.ts ## Store global para autenticación
-      |-pokemons.js ## Store global para las películas
+      |-movies.js ## Store global para las películas
 ```
 
 La lógica principal de la aplicación está centrada en los dos composables creados, que al momento de su instancia hacen
